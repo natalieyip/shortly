@@ -1,1 +1,5 @@
-<p>shorten-form works!</p>
+
+<form [formGroup]="shortenForm" (ngSubmit)="submitForm()"> 
+    <input formControlName="url" type="text" placeholder="Shorten a link here..."/>
+    <button type="submit">Shorten It!</button>
+</form>
